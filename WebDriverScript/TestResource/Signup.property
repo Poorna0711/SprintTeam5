@@ -1,0 +1,16 @@
+chromeDriver=C:\Users\POORNAJ\Desktop\Selenium\Selenium jar\chromedriver_win32\\chromedriver.exe
+url=https://jpetstore.aspectran.com/catalog/
+signinlink= //a[contains(text(),'Sign Up')]
+username=username
+password=password
+repeatedPassword=repeatedPassword
+firstName=firstName
+lastName=lastName
+email=email
+phone=phone
+address1=address1
+address2=address2
+city=city
+state=state
+zip=zip
+country=country

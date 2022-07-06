@@ -1,0 +1,12 @@
+chromeDriver=C:\Users\POORNAJ\Desktop\Selenium\Selenium jar\chromedriver_win32\\chromedriver.exe
+url=https://jpetstore.aspectran.com/catalog/
+Signin= //a[contains(text(),'Sign In')]
+username=username
+password=password
+SignIn=submitLogin
+Dogs=//body/section[1]/div[2]/div[1]/div[4]/a[2]
+select=//a[contains(text(),'K9-BD-01')]
+AddtoCart=//tbody/tr[2]/td[5]/a[1]
+added=//a[contains(text(),'Proceed to Checkout')]
+continue=//button[contains(text(),'Continue')]
+confirm=//button[contains(text(),'Confirm')]
