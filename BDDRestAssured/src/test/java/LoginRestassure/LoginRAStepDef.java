@@ -147,7 +147,7 @@ public class LoginRAStepDef {
 	    	public void get_user_with_username() {
 	    		RestAssured.baseURI = "https://petstore.swagger.io";
 	    		RequestSpecification request = RestAssured.given();
-	    		response = request.delete("/v2/user/chocolate");
+	    		response = request.get("/v2/user/chocolate");
 	    		System.out.println("Response=>" + response.prettyPrint());
 	    }
 	    	@Then("gets user details")
