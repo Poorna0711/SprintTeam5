@@ -1,0 +1,4 @@
+﻿id,username,firstname,lastname,email,password,phone,userStatus
+154,Greek,la,ra,lara@gmail.com,lara123,22222222,0
+155,cherry,pol,ly,polly@gmail.com,polly123,11111111,6
+156,henry,hit,ty,hitty@gmail.com,hitty123,33333333,3
