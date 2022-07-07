@@ -92,8 +92,8 @@ public class GuiFinalStepDef {
 		Thread.sleep(1000);
 	}
 	
-	@And("User clicks on petId")
-	public void user_clicks_on_petId() {
+	@And("User clicks on productId")
+	public void user_clicks_on_productId() {
 		driver.findElement(By.xpath("//tbody/tr[2]/td[1]/strong[1]/a[1]")).click();
 	}
 	
