@@ -69,7 +69,7 @@ public class LoginRAStepDef {
 	        
 	        RestAssured.baseURI = "https://petstore.swagger.io";
 	        RequestSpecification request = RestAssured.given();
-	        response = request.body("\"petId\":\"" +petId +"\",{\"name\":\"" + name +"\","
+	        response = request.body("{\"petId\":\"" +petId +"\",\"name\":\"" + name +"\","
 	        		+ " \"status\":\"" + status +"\"}").post("/v2/pet/53");
 	        
 	        
@@ -160,7 +160,8 @@ public class LoginRAStepDef {
 	    	public void login_user_with_username_and_password(String username,String password){
 	    		RestAssured.baseURI = "https://petstore.swagger.io";
 	    	    RequestSpecification request = RestAssured.given();
-	    	    response=request.body("{ \"name\":\"" + username + "\"password\":\""+password+"").post("/v2/user/login?username=coco&password=string");
+	  response=request.body("{ \"name\":\"" + username + "\", \"password\":\""+password+"\"}").post("/v2/user/login?username=coco&password=string");
+
 	            System.out.println("Response=>" + response.prettyPrint());
 	    		   }
 	    	
