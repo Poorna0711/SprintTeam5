@@ -52,13 +52,13 @@ public class LoginRAStepDef {
 		response = request.delete("/v2/pet/15");
 		System.out.println("Response=>" + response.prettyPrint());
 }
-	@Then("The pet gets deleted")
+	@Then("^The pet gets deleted$")
 	public void the_user_gets_deleted() {
 	   Assert.assertEquals(200 ,response.getStatusCode());
 	}
 	
 
-	    	@When("I update a pet detail")
+	    	@When("^I update a pet detail$")
 	    	public void i_update_a_pet_detail(DataTable dt) {
 	    		
 	    	List<String> list = dt.transpose().asList(String.class);
@@ -83,12 +83,12 @@ public class LoginRAStepDef {
 	        
 	    }
 	    	
-	    	@Then("The pet details updated")
+	    	@Then("^The pet details updated$")
 	        public void The_pet_details_updated() {
 		
 		    Assert.assertEquals(200 ,response.getStatusCode());
 	}
-	    	@When("place order for a pet")
+	    	@When("^place order for a pet$")
 	    	public void place_a_order_for_a_pet(DataTable dt) {
 	    		
 	    	List<String> list = dt.transpose().asList(String.class);
@@ -113,7 +113,7 @@ public class LoginRAStepDef {
 	        
 	    }
 	    	
-	    	@Then("order is placed")
+	    	@Then("^order is placed$")
 	        public void order_is_placed() {
 		
 		    Assert.assertEquals(200 ,response.getStatusCode());
@@ -132,25 +132,25 @@ public class LoginRAStepDef {
 	    	    response = request.get("/v2/store/order/6");
 	    	    System.out.println("Response=>" + response.prettyPrint());
 	    		}
-	    	@When("I delete a order")
+	    	@When("^I delete a order$")
 	    	public void I_Delete_a_order() {
 	    		RestAssured.baseURI = "https://petstore.swagger.io";
 	    		RequestSpecification request = RestAssured.given();
 	    		response = request.delete("/v2/store/order/25");
 	    		System.out.println("Response=>" + response.prettyPrint());
 	    }
-	    	@Then("The order gets deleted")
+	    	@Then("^The order gets deleted$")
 	    	public void the_order_gets_deleted() {
 	    	   Assert.assertEquals(200 ,response.getStatusCode());
 	    	}
-	    	@When("get user with username")
+	    	@When("^get user with username$")
 	    	public void get_user_with_username() {
 	    		RestAssured.baseURI = "https://petstore.swagger.io";
 	    		RequestSpecification request = RestAssured.given();
 	    		response = request.get("/v2/user/chocolate");
 	    		System.out.println("Response=>" + response.prettyPrint());
 	    }
-	    	@Then("gets user details")
+	    	@Then("^gets user details$")
 	    	public void gets_user_details() {
 	    	   Assert.assertEquals(200 ,response.getStatusCode());
 
@@ -164,7 +164,7 @@ public class LoginRAStepDef {
 	            System.out.println("Response=>" + response.prettyPrint());
 	    		   }
 	    	
-	    	@Then("user got loggedin")
+	    	@Then("^user got loggedin$")
 	    	public void user_got_logged_in() {
 	    	   Assert.assertEquals(200 ,response.getStatusCode());
 	    			
