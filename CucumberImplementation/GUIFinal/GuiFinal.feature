@@ -16,7 +16,7 @@ Scenario: Search for pet.
 	Given User enters petname in search
 	When User clicks on search
 	Then Respective pets are displayed
-	And User clicks on petId
+	And User clicks on productId
 	Then Pet varieties are displayed
 	And User clicks on certain pet in categories
 	Then User is navigated to the respective pet page
